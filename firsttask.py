@@ -76,3 +76,77 @@ list_one=[1,2,3,4]
 list_two=[5,6,7,8]
 list_one.extend(list_two)
 print(list_one)
+
+"""
+leap year
+"""
+year = 2024
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print('It is a leap year')
+else:
+    print('It is not a leap year')
+
+"""
+find largest element in list using loop
+"""
+
+my_list = [50, 60, 80, 90, 70, 45]
+max_value = my_list[0]
+
+for x in my_list[1:]:
+    if x > max_value:
+        max_value = x
+
+print("The maximum value is:", max_value)
+
+"""
+Union between two list python
+"""
+Group_A = {"Roaa", "Roua", "Rose"}
+Group_B = {"Rami", "Rose", "Roua"}
+my_list = []
+
+for A in Group_A:
+    if A not in my_list:
+        my_list.append(A)
+
+for B in Group_B:
+    if B not in my_list:
+        my_list.append(B)
+
+print(my_list)
+
+    
+"""
+find sum of digits of a given number
+for example 1223 = 1+2+2+3 =5
+"""
+number = input("Enter Number: ")
+total_sum = 0
+
+for i in number:
+    total_sum += int(i)
+
+print("Sum of digits:", total_sum)
+
+"""
+Sort list of  tuples based second element
+"""
+list=(20,40,50,60)
+
+"""
+Remove duplicate item on list
+"""
+my_list = [50, 60, 20, 100, 50] 
+
+unique_list = []
+
+
+for item in my_list:
+    
+    if item not in unique_list:
+        unique_list.append(item)
+
+print(unique_list)  # Output: [50, 60, 20, 100]
+
